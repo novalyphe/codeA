@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba Diena</title>
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--google fonts linkai -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <!--html surisimas su css -->
+    <link rel="stylesheet" href="css/stilius.css" type="text/css">
+    <!-- viskam su style priskirema spalva (kai yra google fonts tada gali rinktis stiliui sriftus) -->
+    <style>
+        body {
+            font-family: 'Spectral SC', serif;
+        }
+       #paragrafas {
+         color: red;
+       }
+    </style>
+
+
+</head>
+<body>
+
+<div>
+
+<!-- anchor linkas -->
+<a href="http://google.lt" target="_blank" title="mano linkas">
+
+    <ul class="fa-ul;">
+    <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+    <li><i class="fa-li fa fa-spinner fa-spin"></i>List icons</li>
+    <li><i class="fa-li fa fa-square"></i>List icons</li>
+</ul>
+
+    Tai yra googleas</a>
+
+<!-- tag'o id -->
+<p id="paragrafas"> mano tekstas</p>
+
+<!-- linija per visa langa-->
+<hr>
+
+<!-- nenumeruojamas sarasas -->
+<ul>
+    <li>vienas</li>
+    <li>du</li>
+    <li>ir taip toliau</li>
+</ul>
+
+<!-- numeruojasmas sarasas -->
+<ol>
+    <li>vienas</li>
+    <li>du</li>
+    <li>ir taip toliau</li>
+</ol>
+
+<!-- div blokas o tame bloke blokas -->
+<div style="border: 1px red solid; background-color: burlywood; position: relative">
+<p> tavo tekstas vienas</p>
+    <p> ka nori ta rasai</p>
+<div style="border: 1px blue solid; background-color: coral ">
+    <p> tavo tekstas du</p> </div>
+<!-- position absolute (blokas bloke o tame pirmame bloke blokas :D) -->
+<div style="position: absolute; top: 5px; right: 5px; border: 1px red solid;
+ background-color: greenyellow">
+olia amigos
+</div>
+    <!-- div blokas centre -->
+    <div style="position: relative; margin: 5px auto; width: 200px; height: 100px; line-height:
+     100px; border: 1px orange solid; background-color: olive; text-align: center"> centras</div>
+    <!-- padarom is kvadrato i apskritima ir jis uzlipa ant visko -->
+    <div style="position: absolute; height: 150px; width: 150px; top: 50px; left: 200px; background-color: greenyellow; z-index: 1; border-radius: 50%"> </div>
+</div>
+    <!--  diva nuotrauka keleme  ir video-->
+    <div style="width: 300px; height: 200px; border: 1px red solid; background-image: url('https://www.google.lt/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'); background-repeat: no-repeat; background-position: center center; ;background-size: contain;">
+    </div>
+    <div>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/uQIHqZoZtK8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen; style="position relative; display: block; margin: 5px auto"></iframe>
+    </div>
+</div>
+
+<!--vardas, slaptazodis, jungimasis, pastabos -->
+
+   <form action="html/lenteles.html">
+    <table>
+        <tr>
+            <td><label>Vardas</label></td>
+            <td><input type="text" name="vardas"></td>
+        </tr>
+        <tr>
+            <td><label>Slaptazodis</label></td>
+            <td><input type="password" name="slaptazodis"></td>
+        </tr>
+        <tr>
+            <td><label>Pozicija</label></td>
+            <td>
+                <select name="Pozicija">
+                    <option value="0"> Darbininkas</option>
+                    <option value="1"> Vadybininkas</option>
+                    <option value="2"> Direktorius</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Pastaba</label></td>
+            <td><textarea name="pastaba" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Jungtis"></td>
+        </tr>
+    </table>
+   </form>
+    <!-- -->
+
+    </body>
+</html>

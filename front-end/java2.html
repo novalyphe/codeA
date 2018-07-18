@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap empty template</title>
+    
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
+
+
+
+    <style>
+    	body{
+	background:url("/10402419_10152650047326837_8492336144929512183_n-680x388.jpg");
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-size: cover;
+}
+
+
+
+
+#app{
+	
+	background:#fff;
+	border:1px solid #aaa;
+	border-radius: 5px;
+	padding:10px;
+}
+
+#app_table{
+	width:100%;
+}
+
+.container{
+	padding-top:50px;
+}
+
+.credits{
+	text-align:center;
+}
+.bekas {
+	background-image: url(/atsi.jpeg);
+}
+
+.middletext{
+	color: #aaa;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+    </style>
+	<script>
+
+
+		function keisti(){
+	
+			var zodis = document.getElementById('zodis').value;
+			var fraze = document.getElementById('fraze').value;
+			var ats = 'NIEKO'
+
+			var result = "";
+			result = zodis.replace(fraze,ats);
+			//console.log(result);
+
+			document.getElementById('ats').value = result;
+
+		}
+			
+			
+	</script>
+
+</head>
+<body>
+
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-5 ">
+				<div id="app">				
+					<div class="row"> 
+						<div class="col-lg-5">
+							<div class="form-group">
+								<label for="zodis">Textas</label>
+								<textarea type="text" class="form-control" id="zodis" placeholder="Jusu tekstas"></textarea>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="form-group" style="padding-top: 7px">
+								<br>
+								<textarea  type="text" class="form-control " id="fraze" placeholder="Fraze"></textarea>
+							</div>
+						</div>
+					</div>
+				
+							<div class="form-group">
+								<button style="width: 82%;" id="keisti" class="btn btn-danger" onclick="keisti()" > <i class="fa fa-refresh" aria-hidden="true"></i> Pakeisti
+								</button>
+							</div>
+				</div>
+			</div>
+						<div class="col-lg-5 ">
+							<div id="app">				
+								<div class="row"> 
+									<div class="col-lg-12 ">
+										<div class="form-group">
+											<label for="ats">Atsakymas :</label>
+											<textarea type="text" class="form-control" id="ats" placeholder="Jusu gautas tekstas"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+
+</div>
+</body>
+</html>

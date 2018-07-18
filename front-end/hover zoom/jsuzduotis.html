@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba Diena</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+    <script>
+
+        function showtext(){
+            
+            var t = document.getElementById("vardas").value;
+                    document.getElementById("result").innerHTML = "Labas rytas " + t +"!";
+        }
+
+    </script>
+
+</head>
+<body>
+   
+    <div>
+        <button id="btn" onclick="showtext()">calculate</button>
+    </div>
+    <div>
+        <input type="text" id="vardas">
+    </div>
+        <div id="result">
+    </div>
+
+</body>
+</html>

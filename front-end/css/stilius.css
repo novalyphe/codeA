@@ -1,0 +1,119 @@
+.body {	
+	color: black; 
+	background-color: black;
+
+}
+
+
+.center {
+    margin: auto;
+    width: 900px;
+    height: 1400px;
+    border: 3px solid white;
+    padding: 10px;
+    background-color: white
+}
+
+
+.divHead {
+
+	padding: center;
+
+	}
+
+.lentele {
+
+	position: relative;
+	top: 50px; 
+	left: 20px;
+	font-size: 32px;
+
+}
+
+.lentele2 {
+	border-collapse: collapse;
+	position: relative;
+	left: 20px;
+	font-size: 18px;
+	border: 1px black solid;
+	width: 400px;
+    height: 70px;
+}
+.lentele2 th{
+	border: 1px black solid;
+}
+.lentele2 td{
+	border: 1px black solid;
+}
+
+.nuotrauka {
+	background-image: url('http://localhost:8888/front-end/css/as.png'); 
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-size: contain;
+	position: relative; 
+	background-color: grey;
+	height: 250px; 
+	width: 250px; 
+	top: -120px;
+	left: 600px; 
+	z-index: 1; 
+	border-radius: 50%;
+}
+
+.divbody {
+	
+	padding: center;
+	margin: auto;
+    width: 600px;
+    height: 250px;
+    border: 1px black solid; 
+    padding: 10px;
+}
+
+.divfoot {
+
+	padding: center;
+	margin: auto;
+    width: 600px;
+    height: 250px;
+}
+
+.klase:hover {
+	color: green;
+}
+
+.klase {
+	text-decoration: none;
+}
+
+.pasuka:hover {
+	margin: auto auto;
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	border:1px black solid;
+	transform: rotate(45deg);
+
+}
+.pasuka {
+	margin: auto auto;
+	width: 300px;
+	height: 300px;
+	background-color: #912734;
+	border:1px black solid;
+}
+
+.kontikas {
+	display: table-cell;
+	vertical-align: middle;
+	width: 650px;
+	height: 650px;
+	border:1px black solid;
+}
+
+.textas {
+	margin: 45% 45%;
+}
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba Diena</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <script>
+            function skaiciuoti(){
+
+                    var pinigas = document.getElementById("ivedus").value;
+
+                    var unit = document.getElementById('unit').value;
+
+                    var unit2 = document.getElementById('unit2').value;
+
+
+                    var result = 0;
+
+
+
+                    if (unit2 == "eur") {
+                      if (unit == "eur") {
+                        result = pinigas * 1;
+                          }
+                          else if (unit == "pound") {
+                              result = pinigas * 5;
+                          }
+                          else if (unit == "usd") {
+                              result = pinigas * 2;
+                          }
+                          }
+
+
+                    if (unit2 == "usd") {
+                      if (unit == "eur") {
+                        result = pinigas * 1;
+                    }
+                    else if (unit == "pound") {
+                        result = pinigas * 5;
+                    }
+                    else if (unit == "usd") {
+                        result = pinigas * 2;
+                    }
+                    }
+
+                    if (unit2 == "pound") {
+                      if (unit == "eur") {
+                        result = pinigas * 1;
+                    }
+                    else if (unit == "pound") {
+                        result = pinigas * 5;
+                    }
+                    else if (unit == "usd") {
+                        result = pinigas * 2;
+                    }
+                    }
+
+
+
+
+                    document.getElementById("result").value = result;
+                        
+                }
+          </script>
+</head>
+<body>
+
+<div class="container">
+      <h2>Konverteris 2</h2>
+        <div class="row">
+            <div class="col-sm-12">
+
+              <label> Keičiamos valiutos Kiekis:</label>
+              <input type="text" id="ivedus" class="form-control">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+               <br> <select class="col-sm-12" id="unit">
+                      <option id="eur" value="eur">Eurai</option>
+                      <option id="pound" value="pount">Svarai</option>
+                      <option id="usd" value="dolar">Doleriai</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+
+              <label> iškeistos valiutos kiekis:</label>
+              <input type="text" id="result" class="form-control">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+               <br> <select class="col-sm-12" id="unit2">
+                      <option id="eur" value="eur">Eurai</option>
+                      <option id="pound" value="pount">Svarai</option>
+                      <option id="usd" value="dolar">Doleriai</option>
+                </select>
+            </div>
+        </div>
+          <br>
+
+
+        <button type="submit" onclick="skaiciuoti()">Submit</button>
+
+</div>
+</body>
+</html>

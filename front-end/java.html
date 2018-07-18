@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap empty template</title>
+    
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+
+
+
+    <style>
+    	body{
+	background:url("/10402419_10152650047326837_8492336144929512183_n-680x388.jpg");
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-size: cover;
+}
+
+
+
+#app{
+	
+	background:#fff;
+	border:1px solid #aaa;
+	border-radius: 5px;
+	padding:10px;
+}
+
+#app_table{
+	width:100%;
+}
+
+.container{
+	padding-top:50px;
+}
+
+.credits{
+	text-align:center;
+}
+
+.middletext{
+	color: #aaa;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+    </style>
+	<script>
+
+
+		function lyginti(){
+	
+			var zodis = document.getElementById("zodis").value;
+			var zodis2 = document.getElementById("zodis2").value;
+			
+			if(zodis == zodis2)
+			{
+				var result = "žodžiai sutampa";
+				document.getElementById("ats").innerText = result;
+				console.log (result);
+
+			}
+
+			else 
+			{
+				var result = "žodžiai nesutampa"
+				document.getElementById("ats").innerText = result;
+				console.log (result);
+			}
+
+		}
+			
+			
+	</script>
+
+</head>
+<body>
+
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div id="app">				
+					<div class="row"> 
+						<div class="col-lg-5">
+							<div class="form-group">
+								<label for="zodis">Žodis</label>
+								<input type="text" class="form-control" id="zodis" placeholder="zodis">
+							</div>
+						</div>
+						
+						<div class="col-lg-2"><span class="middletext">=</span></div>
+						
+						<div class="col-lg-5">
+							<div class="form-group">
+								<label for="zodis2">Žodis 2</label>
+								<input type="text" class="form-control" id="zodis2" placeholder="zodis 2">
+							</div>
+						</div>
+					</div>
+					
+				
+					<div class="form-group">
+						<button id="lyginti" class="btn btn-danger" onclick="lyginti()" > Palyginti
+						</button>
+						<br>
+						<br>
+						<div class="row"> 
+						<div class="col-lg-12">
+							<div class="form-group">
+								<span id="ats"></span>
+								<input type="text" class="form-control" id="ats" placeholder="Atsakymas...">
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba Diena</title>
+
+    <style>
+
+.kontikas {
+	display: table-cell;
+	vertical-align: middle;
+	width: 1000px;
+	height: 630px;
+	border:1px black solid;
+}
+.kontikas2 {
+	margin: 10px auto;
+	width: 800px;
+	height: 600px;
+	border:1px black solid;
+}
+.lentele td {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	font-size: 18px;
+	border: 1px black solid;
+	width: 200px;
+    height: 292px;
+    transition: transform .1s; 
+}
+.lentele td:hover {
+	-ms-transform: scale(0.95); /* IE 9 */
+    -webkit-transform: scale(0.95); /* Safari 3-8 */
+    transform: scale(0.95); 
+}
+
+#menu {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+.zoomimg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    width: 250px;
+    height: 295px;
+    padding: 0px 5px 0px 5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .5s ease;
+    position: relative;
+    border:1px black solid;
+}
+.zoomimg:hover {
+    cursor: pointer;
+    background-size: 125% 125%;
+}
+.blog {
+    background-image: url(http://localhost:8888/front-end/css/as.png);
+}
+.music {
+    background-image: url(http://localhost:8888/front-end/css/as.png);
+}
+.projects {
+    background-image: url(http://localhost:8888/front-end/css/as.png);
+}
+.olia {
+    background-image: url(http://localhost:8888/front-end/css/as.png);
+}
+.olia2 {
+    background-image: url(http://localhost:8888/front-end/css/as.png);
+}
+.olia3 {
+    background-image: url(http://localhost:8888/front-end/css/as.png);
+}
+
+/*CSS to Add an Overlay*/
+
+.zoomimg:after {
+    position: absolute;
+    /* background-color: rgba(0,0,0,.35); */
+    content: 'Click Here';
+    font-family: sans-serif;
+    padding-top: 250px;
+    font-size: 2em;
+    color: #fff;
+    top:  0;
+    left: 0;
+    width: 250px;
+    height: 295px;
+    opacity: 0;
+    transition: opacity .5s linear;
+    box-sizing: border-box;
+}
+.zoomimg:hover:after {
+    opacity: 1;
+}
+
+.fakas {
+     opacity: 0.2;
+    filter: alpha(opacity=20)
+}
+    </style>
+
+
+   
+  
+</head>
+<body>
+	<h3>1 budas</h3>
+	<div class="kontikas">
+		<div class="kontikas2">
+			<table class="lentele">
+					    <tr>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> <img class="fakas" src="http://localhost:8888/fakas.jpeg" alt="fakas" width="200" height="292"></td>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					    </tr>
+					    <tr>
+					    	<td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					        <td style="background-image: url('http://localhost:8888/front-end/css/as.png'); background-repeat: no-repeat; background-position: center center; background-size: contain;"> </td>
+					    </tr>
+
+				</table>
+
+
+
+		</div>
+
+
+	</div>
+	<br>
+	<h3>2 budas</h3>
+<div class="kontikas">
+	<div class="kontikas2" id="menu">
+	    <div class="blog zoomimg"></div>
+	    <div class="music zoomimg"></div>
+	    <div class="projects zoomimg"></div>
+	    <div class="olia zoomimg"></div>
+	    <div class="olia2 zoomimg"></div>
+	    <div class="olia3 zoomimg"></div>
+	</div>
+</div>
+</body>
+</html>

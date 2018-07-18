@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
+
+<style>
+    	body{
+			background:url("/10402419_10152650047326837_8492336144929512183_n-680x388.jpg");
+			background-repeat: no-repeat; 
+			background-position: center center; 
+			background-size: cover;
+			}
+
+
+
+
+			#app{
+				
+				background:#fff;
+				border:1px solid #aaa;
+				border-radius: 5px;
+				padding:10px;
+
+			}
+
+			#app_table{
+				width:100%;
+			}
+
+			.container{
+				padding-top:50px;
+			}
+
+			.credits{
+				text-align:center;
+			}
+			.bekas {
+				background-image: url(/atsi.jpeg);
+			}
+
+			.middletext{
+				color: #aaa;
+			    display: block;
+			    text-align: center;
+			    font-size: 24px;
+			    padding-top: 10px;
+			}
+    </style>
+	<script>
+
+
+		var masyvas = [];
+		
+function ideti(){
+	//console.log("ideda");	
+	var newPro = document.getElementById("produktas").value;			
+	//console.log(newPro);			
+	masyvas.push(newPro);
+	//console.log(masyvas);
+	renderArray(masyvas);				
+}
+
+
+function renderArray(x){
+	
+	var h = "";
+	h = "<ul>";
+	for(var i = 0;i < x.length;i++){
+		console.log(x[i]);
+		h = h + "<li>" +x[i]+"</li>";
+	}
+	h = h + "</ul>"
+	document.getElementById("ats").innerHTML = h;
+}
+			
+	</script>
+
+</head>
+<body>
+
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-6 ">
+				<div id="app">				
+					<div class="row"> 
+						<div class="col-lg-12">
+								<label for="produktai">PRODUKTAI</label>
+								<input style="width: 100%;" type="text" class="form-control" id="produktas" placeholder="Jusu produktai"></input>
+						</div>
+					</div>
+				
+							<div class="row">
+								<div class="col-lg-12">
+									<br>
+									<button style="width: 100%;" id="prideti" class="btn btn-danger" onclick="ideti()" > <i class="fa fa-refresh" aria-hidden="true"></i> Įdėti 
+									</button>
+								</div>
+							</div>
+				</div>
+			</div>
+						<div class="col-lg-6 ">
+							<div id="app">				
+								<div class="row"> 
+									<div class="col-lg-12 ">
+										<div class="form-group">
+											<label for="ats">Sarasiukas :</label>
+											<div id="ats" placeholder="Jusu pirkiniu sarasiukas"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+
+</div>
+   <script src="js/script.js"></script>
+</body>
+</html>

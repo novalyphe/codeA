@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laba Diena</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <script>
+            function skaiciuoti(){
+
+                    var meters = document.getElementById("ivedus").value;
+
+                    var unit = document.getElementById('unit').value;
+
+                    var result = 0;
+
+                    if (unit == "cm") {
+                        result = meters *100;
+
+                    }
+                    else if (unit == "inch") {
+                        result = meters * 39.37;
+                    }
+                    else if (unit == "pedos") {
+                        result = meters * 3.28;
+                    }
+
+                    document.getElementById("rezultatas").value = result;
+                        
+                }
+          </script>
+</head>
+<body>
+
+<div class="container">
+      <h2>Konverteris</h2>
+        <div class="row">
+            <div class="col-sm-3">
+
+
+              <label> metrai</label>
+              <input type="text" id="ivedus" class="form-control">
+
+
+            </div>
+            <div class="col-sm-1">
+              <label style="padding: 0px 30px" ><br> =</label>
+            </div>
+            <div class="col-sm-3">
+
+
+              <label> Pedos </label>
+              <input type="text" id="rezultatas" class="form-control" >
+
+
+            </div>
+        </div>
+        <div style="padding: 0px 20px"  class="row">
+               <br> <select id="unit">
+                      <option id="pedos" value="pedos">Pedos</option>
+                      <option id="inch" value="inch">Inch</option>
+                      <option id="cm" value="cm">cm</option>
+                </select>
+            </div>
+         <br>
+        <button type="submit" onclick="skaiciuoti()">Submit</button>
+
+</div>
+</body>
+</html>

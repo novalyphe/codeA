@@ -1,0 +1,38 @@
+body {
+	position: relative;
+}
+
+#jquery_basic {
+	position: relative;
+}
+
+.topPanel {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.scrollcounting {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: orange;
+	padding: 10px;
+	text-align: center;
+	border: black;
+}
+
+.whitebg {
+	background:#fff;
+}
+
+.topspace {
+	height: 100px;
+}
+
+.cotainer_helper {
+	margin-top: 100px;
+}
+
